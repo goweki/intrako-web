@@ -82,7 +82,8 @@ export default function Header() {
                   <Link
                     key={v.name}
                     href={v.link}
-                    className="inline-block border-b-4 border-transparent hover:border-blue-900"
+                    onClick={() => setShowMenu(false)}
+                    className="transition-all inline-block border-b-4 border-transparent hover:border-blue-900"
                   >
                     {v.name}
                   </Link>
