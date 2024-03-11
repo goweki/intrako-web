@@ -114,7 +114,7 @@ export default function Home() {
               Wondering what is next for your great idea / Product?
             </h1>
             <p className="text-white mb-10 text-base md:text-lg font-bold">
-              Let's help bring your vision and business to life!
+              Let&apos;s help bring your vision and business to life!
             </p>
             <Link
               href="/contacts"
