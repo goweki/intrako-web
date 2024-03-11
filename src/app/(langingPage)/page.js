@@ -39,17 +39,19 @@ export default function Home() {
           <div className="max-w-xl mx-auto text-center">
             <div className="w-24 h-2 bg-blue-800 mb-4 mx-auto"></div>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
-              We are a dynamic and fully integrated agency specializingin
+              We are a dynamic and fully integrated agency specializing in
               experiential marketing
             </h2>
-            <p className="font-light text-gray-600 mb-6 leading-relaxed">
-              Our approach is grounded in meticulous research, strategi
+            <p className="font-light text-xl text-gray-600 mb-6 leading-relaxed">
+              Our approach is grounded in meticulous research, strategic
               thinking, and the excellent ezecution of marketing plans.
             </p>
           </div>
           <div className="flex flex-wrap gap-6 p-12">
             <div className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75 p-12">
-              <div className="relative z-10">Title1</div>
+              <div className="relative z-10 text-center">
+                INNOVATION & CREATIVITY
+              </div>
               <Image
                 src="/images/card-image.jpg"
                 layout="fill"
@@ -59,9 +61,9 @@ export default function Home() {
               />
             </div>
             <div className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75 p-12">
-              <div className="relative z-10">Title1</div>
+              <div className="relative z-10 text-center">PROFESSIONALISM</div>
               <Image
-                src="/images/Featured-02.jpg"
+                src="/images/card-image.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="img"
@@ -69,9 +71,9 @@ export default function Home() {
               />
             </div>
             <div className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75 p-12">
-              <div className="relative z-10">Title1</div>
+              <div className="relative z-10 text-center">CLIENT-CENTRICITY</div>
               <Image
-                src="/images/Featured-02.jpg"
+                src="/images/card-image.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="img"
