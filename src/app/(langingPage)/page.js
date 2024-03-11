@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useTheme } from "next-themes";
 import Header from "@/components/header";
 import HeroCard from "@/components/atoms/heroCard";
+import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Home() {
   const { setTheme, resolvedTheme } = useTheme();
@@ -88,7 +90,7 @@ export default function Home() {
               <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
                 Our Services
               </h2>
-              <ul class="list-disc my-4">
+              <ul className="list-disc my-4">
                 <li>Market Research</li>
                 <li>Product Strategy & Management</li>
                 <li>Product / Visual Design</li>
@@ -114,12 +116,12 @@ export default function Home() {
             <p className="text-white mb-10 text-base md:text-lg font-bold">
               Let's help bring your vision and business to life!
             </p>
-            <a
-              href="/#"
-              className="inline-block bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
+            <Link
+              href="/contacts"
+              className="inline-block bg-blue-600 hover:bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
 
           <img
@@ -129,6 +131,7 @@ export default function Home() {
         </section>
         {/* {% endif %} */}
       </main>
+      <Footer />
     </>
   );
 }
