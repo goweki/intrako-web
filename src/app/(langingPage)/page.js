@@ -32,10 +32,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="aboutUs"
-          className="w-full max-w-screen-2xl py-24 md:py-32"
-        >
+        <section id="about" className="w-full max-w-screen-2xl py-24 md:py-32">
           <div className="max-w-xl mx-auto text-center">
             <div className="w-24 h-2 bg-blue-800 mb-4 mx-auto"></div>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
@@ -83,30 +80,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
-          <div className="bg-white p-12 md:p-24 flex justify-start items-center">
-            <Link href="/post">
-              <img
-                src="/images/Featured-02.jpg"
-                className="w-full max-w-md"
-                alt="img"
-              />
-            </Link>
-          </div>
+        <section
+          id="services"
+          className="grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl"
+        >
+          <div className="w-full h-full bg-[url('/images/card-image.jpg')] bg-no-repeat bg-center bg-cover"></div>
 
-          <div className="md:order-first bg-gray-100 p-12 md:p-24 flex justify-end items-center">
-            <div className="max-w-md">
-              <div className="w-24 h-2 bg-blue-800 mb-4"></div>
-              <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
-                Our Services
-              </h2>
-              <ul className="list-disc my-4">
-                <li>Market Research</li>
-                <li>Product Strategy & Management</li>
-                <li>Product / Visual Design</li>
-                <li>Business development</li>
-              </ul>
-            </div>
+          <div className="md:order-first bg-slate-100 p-12 md:p-24 flex flex-col justify-end items-center">
+            {/* <div className="max-w-md"> */}
+            <div className="w-24 h-2 bg-blue-800 mb-4"></div>
+            <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
+              Our Services
+            </h2>
+            <ul className="list-disc my-4">
+              <li>Market Research</li>
+              <li>Product Strategy & Management</li>
+              <li>Product / Visual Design</li>
+              <li>Business development</li>
+            </ul>
+            {/* </div> */}
           </div>
         </section>
 

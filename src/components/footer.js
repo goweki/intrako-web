@@ -15,12 +15,12 @@ export default function Footer() {
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
             <li>
-              <Link href="/about" className="hover:underline me-4 md:me-6">
+              <Link href="/#about" className="hover:underline me-4 md:me-6">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:underline me-4 md:me-6">
+              <Link href="/#services" className="hover:underline me-4 md:me-6">
                 Services
               </Link>
             </li>
