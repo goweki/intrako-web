@@ -23,7 +23,7 @@ export default function Home() {
       >
         <section
           id="hero"
-          className="relative w-full py-12 px-12 max-w-screen-2xl m-auto h-screen max-h-[800px] bg-slate-100"
+          className="min-h-80 relative w-full py-12 px-12 max-w-screen-2xl m-auto h-screen max-h-[800px] bg-slate-100"
         >
           <HeroCard />
           <div className="grid grid-cols-2 w-full h-full absolute inset-0">
