@@ -5,6 +5,12 @@
 @layer base {
   html,
   body {
-    @apply bg-slate-100 text-slate-800;
+    @apply bg-slate-200 text-slate-800;
+  }
+}
+
+@layer base {
+  .foreground {
+    @apply bg-slate-100;
   }
 }
