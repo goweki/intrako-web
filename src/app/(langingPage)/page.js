@@ -41,7 +41,7 @@ export default function Home() {
             </h2>
             <p className="font-light text-xl text-gray-600 mb-6 leading-relaxed">
               Our approach is grounded in meticulous research, strategic
-              thinking, and the excellent ezecution of marketing plans.
+              thinking, and the excellent execution of marketing plans.
             </p>
           </div>
           <div className="flex flex-wrap gap-6 p-12">
