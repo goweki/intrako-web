@@ -8,7 +8,7 @@ export default function HeroCard() {
           Your partner in marketing and business development
         </h1>
         <Link
-          href="/"
+          href="/contacts"
           className="inline-block rounded bg-blue-600 hover:bg-blue-800 text-white uppercase text-xs md:text-sm tracking-widest font-heading px-8 py-4"
         >
           Contact Us
