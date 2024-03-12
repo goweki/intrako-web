@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <main>
-      <div className="h-20 bg-slate-300"></div>
+      <div className="h-20 bg-[url('/images/light-tower.gif')] bg-cover bg-center"></div>
       <section class="text-center py-12 px-6">
         <h1 class="font-display font-bold text-5xl mb-6">Contact Us</h1>
         <p class="max-w-lg mx-auto">
