@@ -27,10 +27,12 @@ export default function Header() {
               key={v.name}
               href={v.link}
               className={`${
-                pathname === v.link ? "font-bold text-blue-600" : ""
-              } ${pathname === "/" ? "" : "text-slate-100"} ${
-                pathname !== "/" && pathname === v.link ? "text-blue-300" : ""
-              } hover:underline`}
+                pathname !== "/" && pathname === v.link
+                  ? "text-blue-300 font-bold"
+                  : pathname === v.link
+                  ? "font-bold text-blue-600"
+                  : ""
+              } ${pathname === "/" ? "" : "text-slate-100"} hover:underline`}
             >
               {v.name}
             </Link>
