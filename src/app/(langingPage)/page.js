@@ -22,7 +22,7 @@ export default function Home() {
       >
         <HeroCard />
         <div className="grid grid-cols-2 w-full h-full absolute inset-0">
-          <div className="bg-[url('/images/Featured-01.jpg')] bg-cover animate-fade"></div>
+          <div className="bg-[url('/images/glow-figures.gif')] bg-cover bg-center animate-fade"></div>
           <div></div>
         </div>
       </section>
@@ -45,29 +45,26 @@ export default function Home() {
               INNOVATION & CREATIVITY
             </div>
             <Image
-              src="/images/card-image.jpg"
+              src="/images/creativity.jpg"
               layout="fill"
-              objectFit="cover"
               alt="img"
-              className="absolute inset-0 w-full h-full object-cover opacity-50"
+              className="absolute inset-0 w-full h-full object-cover opacity-30"
             />
           </div>
           <div className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75 p-12">
             <div className="relative z-10 text-center">PROFESSIONALISM</div>
             <Image
-              src="/images/card-image.jpg"
+              src="/images/professionalism.jpg"
               layout="fill"
-              objectFit="cover"
               alt="img"
-              className="absolute inset-0 w-full h-full object-cover opacity-50"
+              className="absolute inset-0 w-full h-full object-cover opacity-30"
             />
           </div>
           <div className="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75 p-12">
             <div className="relative z-10 text-center">CLIENT-CENTRICITY</div>
             <Image
-              src="/images/card-image.jpg"
+              src="/images/user-centricity.jpg"
               layout="fill"
-              objectFit="cover"
               alt="img"
               className="absolute inset-0 w-full h-full object-cover opacity-50"
             />
@@ -79,7 +76,7 @@ export default function Home() {
         id="services"
         className="grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl"
       >
-        <div className="w-full h-full bg-[url('/images/card-image.jpg')] bg-no-repeat bg-center bg-cover"></div>
+        <div className="w-full h-full bg-[url('/images/design-tools.jpg')] bg-no-repeat bg-center bg-cover"></div>
 
         <div className="md:order-first bg-slate-100 p-12 md:p-24 flex flex-col justify-end items-center">
           {/* <div className="max-w-md"> */}
@@ -97,12 +94,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative w-full py-12 px-12 bg-slate-950 max-w-screen-2xl">
+      <section className="relative w-full py-12 px-12 max-w-screen-2xl">
         <div className="relative z-10 text-center py-12 md:py-24">
-          <h1 className="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-6">
+          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-6">
             Wondering what is next for your great idea / Product?
           </h1>
-          <p className="text-white mb-10 text-base md:text-lg font-bold">
+          <p className="mb-10 text-base md:text-lg font-bold">
             Let&apos;s help bring your vision and business to life!
           </p>
           <Link
@@ -112,12 +109,6 @@ export default function Home() {
             Contact Us
           </Link>
         </div>
-
-        <img
-          src="/images/Featured-02.jpg"
-          alt="img"
-          className="w-full h-full absolute inset-0 object-cover opacity-50"
-        />
       </section>
     </main>
   );

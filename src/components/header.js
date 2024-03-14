@@ -14,7 +14,7 @@ export default function Header() {
         <div id="logo" className="flex items-center justify-center">
           <Link
             href="/"
-            className="text-white uppercase font-bold text-2xl tracking-widest"
+            className="text-white uppercase font-bold text-2xl tracking-widest mix-blend-darken"
           >
             {/* <img src="{{ settings.logo }}" className="h-20 w-64 object-contain object-center" /> */}
             INTRAKO
