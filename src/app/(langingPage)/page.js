@@ -104,7 +104,7 @@ export default function Home() {
           </p>
           <Link
             href="/contacts"
-            className="inline-block bg-blue-600 hover:bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
+            className="inline-block rounded bg-blue-600 hover:bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4"
           >
             Contact Us
           </Link>

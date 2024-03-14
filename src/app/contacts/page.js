@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <main>
-      <div className="h-20 bg-[url('/images/light-tower.gif')] bg-cover bg-center"></div>
+      <div className="animate-fade transition-all h-20 bg-[url('/images/glow-figures-banner.gif')] bg-cover bg-center"></div>
       <section class="text-center py-12 px-6">
         <h1 class="font-display font-bold text-5xl mb-6">Contact Us</h1>
         <p class="max-w-lg mx-auto">
@@ -135,7 +135,7 @@ export default function ContactPage() {
                   class="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                 ></textarea>
               </div>
-              <button class="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4 mt-6">
+              <button class="inline-block bg-blue-600 hover:bg-blue-800 rounded text-white uppercase text-sm tracking-widest font-heading px-8 py-4 mt-6">
                 Send message
               </button>
             </form>
