@@ -27,7 +27,9 @@ export default function Header() {
               key={v.name}
               href={v.link}
               className={`${
-                pathname === v.link ? "font-bold text-blue-500" : ""
+                pathname === v.link ? "font-bold text-blue-600" : ""
+              } ${pathname === "/" ? "" : "text-slate-100"} ${
+                pathname !== "/" && pathname === v.link ? "text-blue-300" : ""
               } hover:underline`}
             >
               {v.name}
@@ -55,7 +57,7 @@ export default function Header() {
           </button>
 
           {showMenu && (
-            <div className="fixed inset-0 w-full h-full bg-white z-50 text-blue-800">
+            <div className="transition-all fixed inset-0 w-full h-full bg-white z-50 text-blue-800">
               <div className="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6">
                 <button
                   onClick={() => setShowMenu((prev) => !prev)}
