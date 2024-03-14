@@ -43,7 +43,7 @@ export default function Header() {
         <div id="hamburgerMenu" className="flex items-center lg:hidden">
           <button onClick={() => setShowMenu((prev) => !prev)}>
             <svg
-              className="w-8 h-8"
+              className={`w-8 h-8 ${pathname !== "/" ? "text-slate-300" : ""}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
