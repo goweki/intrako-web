@@ -23,7 +23,7 @@ export default function Home() {
         <HeroCard />
         <div className="grid grid-cols-2 w-full h-full absolute inset-0">
           <div className="bg-[url('/images/glow-figures.gif')] bg-cover bg-center animate-fade"></div>
-          <div></div>
+          <div className="bg-blue-200"></div>
         </div>
       </section>
 
