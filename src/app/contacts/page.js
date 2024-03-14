@@ -2,19 +2,19 @@ export default function ContactPage() {
   return (
     <main>
       <div className="animate-fade transition-all h-20 bg-[url('/images/glow-figures-banner.gif')] bg-cover bg-center"></div>
-      <section class="text-center py-12 px-6">
-        <h1 class="font-display font-bold text-5xl mb-6">Contact Us</h1>
-        <p class="max-w-lg mx-auto">
+      <section className="text-center py-12 px-6">
+        <h1 className="font-display font-bold text-5xl mb-6">Contact Us</h1>
+        <p className="max-w-lg mx-auto">
           Engage us via the contacts below, or fill the form to leave us an
           email
         </p>
       </section>
-      <section class="container mx-auto px-6 mb-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <section className="container mx-auto px-6 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div>
-            <a href="tel:{{ contact.tel }}" class="flex items-center my-2">
+            <a href="tel:{{ contact.tel }}" className="flex items-center my-2">
               <svg
-                class="w-4 h-4 mr-2"
+                className="w-4 h-4 mr-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -32,10 +32,10 @@ export default function ContactPage() {
 
             <a
               href="mailto:{{ contact.address }}"
-              class="flex items-center my-2"
+              className="flex items-center my-2"
             >
               <svg
-                class="w-4 h-4 mr-2"
+                className="w-4 h-4 mr-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -51,9 +51,9 @@ export default function ContactPage() {
               Email
             </a>
 
-            <div class="flex items-center my-2">
+            <div className="flex items-center my-2">
               <svg
-                class="w-4 h-4 mr-2"
+                className="w-4 h-4 mr-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -72,10 +72,10 @@ export default function ContactPage() {
             <a
               href="https://www.google.com/maps/place/{{ contact.address }}"
               target="_blank"
-              class="flex items-center my-2"
+              className="flex items-center my-2"
             >
               <svg
-                class="w-4 h-4 mr-2"
+                className="w-4 h-4 mr-2"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -101,7 +101,7 @@ export default function ContactPage() {
           <div>
             <form method="POST" name="contact" netlify>
               <div>
-                <label class="block text-base tracking-tight text-gray-600">
+                <label className="block text-base tracking-tight text-gray-600">
                   Name
                 </label>
                 <input
@@ -109,11 +109,11 @@ export default function ContactPage() {
                   type="text"
                   placeholder="Name"
                   required
-                  class="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
+                  className="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                 />
               </div>
-              <div class="mt-6">
-                <label class="block text-base tracking-tight text-gray-600">
+              <div className="mt-6">
+                <label className="block text-base tracking-tight text-gray-600">
                   Email address
                 </label>
                 <input
@@ -121,21 +121,21 @@ export default function ContactPage() {
                   type="email"
                   placeholder="your@email.com"
                   required
-                  class="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
+                  className="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                 />
               </div>
-              <div class="mt-6">
-                <label class="block text-base tracking-tight text-gray-600">
+              <div className="mt-6">
+                <label className="block text-base tracking-tight text-gray-600">
                   Message
                 </label>
                 <textarea
                   name="message"
                   placeholder="Your message"
                   required
-                  class="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
+                  className="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                 ></textarea>
               </div>
-              <button class="inline-block bg-blue-600 hover:bg-blue-800 rounded text-white uppercase text-sm tracking-widest font-heading px-8 py-4 mt-6">
+              <button className="inline-block bg-blue-600 hover:bg-blue-800 rounded text-white uppercase text-sm tracking-widest font-heading px-8 py-4 mt-6">
                 Send message
               </button>
             </form>
