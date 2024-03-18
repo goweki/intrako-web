@@ -30,11 +30,11 @@ export default function Home() {
       <section id="about" className="w-full max-w-screen-2xl py-24 md:py-32">
         <div className="max-w-xl mx-auto text-center">
           <div className="w-24 h-2 bg-blue-800 mb-4 mx-auto"></div>
-          <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
+          <h2>
             We are a dynamic and fully integrated agency specializing in
             experiential marketing
           </h2>
-          <p className="font-light text-xl text-gray-600 mb-6 leading-relaxed">
+          <p>
             Our approach is grounded in meticulous research, strategic thinking,
             and the excellent execution of marketing plans.
           </p>
@@ -81,9 +81,7 @@ export default function Home() {
         <div className="md:order-first bg-slate-100 p-12 md:p-24 flex flex-col justify-end items-center">
           {/* <div className="max-w-md"> */}
           <div className="w-24 h-2 bg-blue-800 mb-4"></div>
-          <h2 className="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">
-            Our Services
-          </h2>
+          <h2>Our Services</h2>
           <ul className="list-disc my-4">
             <li>Market Research</li>
             <li>Product Strategy & Management</li>
@@ -96,9 +94,7 @@ export default function Home() {
 
       <section className="relative w-full py-12 px-12 max-w-screen-2xl">
         <div className="relative z-10 text-center py-12 md:py-24">
-          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-6">
-            Wondering what is next for your great idea / Product?
-          </h1>
+          <h2>Wondering what is next for your great idea / Product?</h2>
           <p className="mb-10 text-base md:text-lg font-bold">
             Let&apos;s help bring your vision and business to life!
           </p>
