@@ -9,9 +9,8 @@ export default function Testimonials() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Don&apos;t take our word for it</h2>
             <p className="text-xl text-gray-400">
-              Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
-              semper quis lectus nulla at volutpat diam ut venenatis tellus—in
-              ornare.
+              Here is what our partners and clients have to say about our
+              services
             </p>
           </div>
 
@@ -26,10 +25,10 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={"/images/testimonial-01.jpg"}
+                    src={"/images/placeholder-dp.jpg"}
                     width={48}
                     height={48}
-                    alt="Testimonial 01"
+                    alt="testimonial-img"
                   />
                   <svg
                     className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
@@ -41,19 +40,17 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I&apos;ve had Open PRO for
-                about 24 hours now and I honestly don&apos;t know how I
-                functioned without it before.
+                Intrako was a great resource in terms of subject-matter
+                expertise hwne rolling out a new product for the East African
+                market
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
-                -{" "}
+                <cite className="text-gray-200 not-italic">John Doe</cite> -{" "}
                 <a
                   className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  UX Board
+                  Macha logistics
                 </a>
               </div>
             </div>
@@ -68,10 +65,10 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={"/images/testimonial-02.jpg"}
+                    src={"/images/placeholder-dp.jpg"}
                     width={48}
                     height={48}
-                    alt="Testimonial 02"
+                    alt="testimonial-img"
                   />
                   <svg
                     className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
@@ -83,19 +80,16 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I&apos;ve had Open PRO for
-                about 24 hours now and I honestly don&apos;t know how I
-                functioned without it before.
+                Great communication and perfect execution of complex marketing
+                tasks. Loved working with Intrako
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
-                -{" "}
+                <cite className="text-gray-200 not-italic">Mana mania</cite> -{" "}
                 <a
                   className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  UX Board
+                  ONGL beef
                 </a>
               </div>
             </div>
@@ -110,10 +104,10 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={"/images/testimonial-03.jpg"}
+                    src={"/images/placeholder-dp.jpg"}
                     width={48}
                     height={48}
-                    alt="Testimonial 03"
+                    alt="testimonial-img"
                   />
                   <svg
                     className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
@@ -125,19 +119,16 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I&apos;ve had Open PRO for
-                about 24 hours now and I honestly don&apos;t know how I
-                functioned without it before.
+                Champions of user-centred design and market driven operations.
+                Such an asset to clients.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
-                -{" "}
+                <cite className="text-gray-200 not-italic">Jane Doe</cite> -{" "}
                 <a
                   className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
-                  UX Board
+                  Tourism Board
                 </a>
               </div>
             </div>

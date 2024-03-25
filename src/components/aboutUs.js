@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function AboutUs() {
   return (
     <section id="aboutUs">
@@ -285,5 +288,134 @@ export default function AboutUs() {
         </div>
       </div>
     </section>
+  );
+}
+
+export function BriefAboutUs() {
+  return (
+    <div className="p-5 w-full" id="brief-aboutUs">
+      <div className="max-w-6xl  m-auto grid grid-cols-1 lg:grid-cols-2">
+        <div
+          className="cols-span-1 p-12 pt-0"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          <div className="about-img rounded-xl overflow-hidden">
+            <img className="img-fluid" src="images/professionals.jpeg" />
+          </div>
+        </div>
+        <div
+          className="cols-span-1 m-6"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          <div className="my-auto flex flex-col space-y-4">
+            <div>
+              <div className="border-2 text-sm rounded-full inline py-2 px-4">
+                About Us
+              </div>
+            </div>
+            <h2 className="h2 mb-4">
+              We help businesses manage and scale products
+            </h2>
+            <p className="mb-4">
+              XPERIENTIAL marketing takes center stage as our main service,
+              offering a unique and immersive approach to connect brands with
+              their audiences. We believe there is a growing need for brands to
+              move beyond conventional advertising methods and embrace more
+              interactive and memorable approaches.
+            </p>
+            <p className="mb-4">We specialize in:</p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2">
+              <li className="flex items-center mb-2">
+                <svg
+                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                </svg>
+                <span>Marketing</span>
+              </li>
+              <li className="flex items-center mb-2">
+                <svg
+                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                </svg>
+                <span>Branding</span>
+              </li>
+              <li className="flex items-center">
+                <svg
+                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                </svg>
+                <span>Project management</span>
+              </li>
+            </ul>
+            <div className="flex flex-row justify-start mt-4">
+              <Link
+                className="py-2 px-4 bg-transparent border-2 border-orange-400 hover:bg-orange-500 hover:text-black rounded me-6 transition-all"
+                href="/aboutUs"
+              >
+                Read More
+              </Link>
+              <Link
+                className="group flex h-10 w-10 p-2 items-center justify-center border-2 border-sky-500 hover:border-transparent hover:bg-sky-600 rounded-full transition-all me-3"
+                href="https://fb.com/goweki"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5 fill-current text-sky-400 group-hover:text-white"
+                >
+                  <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z" />
+                </svg>
+              </Link>
+              <Link
+                className="group flex h-10 w-10 p-2 items-center justify-center border-2 border-sky-500 hover:border-transparent hover:bg-sky-600 rounded-full transition-all me-3"
+                href="https://www.linkedin.com/in/goweki"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4 fill-current text-sky-400 group-hover:text-white"
+                >
+                  <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />{" "}
+                </svg>
+              </Link>
+              <Link
+                className="group flex h-10 w-10 p-2 items-center justify-center border-2 border-sky-500 hover:border-transparent hover:bg-sky-600 rounded-full transition-all"
+                href="https://twitter.com/goweki_"
+              >
+                {/* <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="h-6 w-6 fill-current text-orange-400 group-hover:text-white"
+                >
+                  <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z" />
+                </svg> */}
+                <svg
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  viewBox="0 0 512 462.799"
+                  className="h-4 w-4 fill-current text-sky-400 group-hover:text-white"
+                >
+                  <path
+                    fillRule="nonzero"
+                    d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
