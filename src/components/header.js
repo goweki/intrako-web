@@ -49,7 +49,7 @@ export default function Header() {
             </ul>
           </nav>
 
-          <MobileMenu />
+          <MobileMenu menuItems={menuItems} />
         </div>
       </div>
     </header>

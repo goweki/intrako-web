@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-export default function MobileMenu() {
+export default function MobileMenu({ menuItems }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
@@ -69,16 +69,18 @@ export default function MobileMenu() {
         }
       >
         <ul className="bg-gray-800 px-4 py-2">
-          <li>
-            <Link
-              href="/signin"
-              className="flex font-medium w-full text-sky-600 hover:text-gray-200 py-2 justify-center"
-              onClick={() => setMobileNavOpen(false)}
-            >
-              Sign in
-            </Link>
-          </li>
-          <li>
+          {menuItems.map((v, i) => (
+            <li key={v.name}>
+              <Link
+                href={v.link}
+                className="flex font-medium w-full hover:bg-sky-600 hover:text-gray-200 py-2 justify-center"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                {v.name}
+              </Link>
+            </li>
+          ))}
+          {/* <li>
             <Link
               href="/signup"
               className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-sky-600 hover:bg-sky-700 transition duration-150 ease-in-out"
@@ -86,7 +88,7 @@ export default function MobileMenu() {
             >
               Sign up
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

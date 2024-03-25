@@ -5,8 +5,8 @@ export default function ContactPage() {
       <section className="text-center py-12 px-6">
         <h1 className="font-display font-bold text-5xl mb-6">Contact Us</h1>
         <p className="max-w-lg mx-auto">
-          Engage us via the contacts below, or fill the form to leave us an
-          email
+          Talk to us via the contacts below, or fill the form to leave us a
+          message
         </p>
       </section>
       <section className="container mx-auto px-6 mb-12">
@@ -31,7 +31,7 @@ export default function ContactPage() {
             </a>
 
             <a
-              href="mailto:{{ contact.address }}"
+              href="mailto:business@intrako.co.ke"
               className="flex items-center my-2"
             >
               <svg
@@ -66,11 +66,11 @@ export default function ContactPage() {
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              Contact Open-times from 9-5
+              {`Open: Mon-Fri (from 9am-5pm)`}
             </div>
 
             <a
-              href="https://www.google.com/maps/place/{{ contact.address }}"
+              href="https://maps.app.goo.gl/Dpn5p7CvMsbJ9QxY9"
               target="_blank"
               className="flex items-center my-2"
             >
@@ -94,12 +94,12 @@ export default function ContactPage() {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
               </svg>
-              Contact Address: Muthangari Drive, Lavington, Nairobi-KE
+              Muthangari Drive, Lavington, Nairobi-KE
             </a>
           </div>
 
           <div>
-            <form name="contact">
+            <form name="contact" data-aos="fade-left">
               <div>
                 <label className="block text-base tracking-tight text-gray-600">
                   Name
@@ -135,8 +135,8 @@ export default function ContactPage() {
                   className="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                 ></textarea>
               </div>
-              <button className="inline-block bg-blue-600 hover:bg-blue-800 rounded text-white uppercase text-sm tracking-widest font-heading px-8 py-4 mt-6">
-                Send message
+              <button className="inline-block bg-orange-400 hover:bg-orange-600 rounded text-black text-sm font-semibold tracking-widest font-heading px-8 py-4 mt-6">
+                Send Message
               </button>
             </form>
           </div>

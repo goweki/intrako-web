@@ -29,7 +29,7 @@ export default function Services() {
               >
                 <Image
                   className="max-w-full mx-auto md:max-w-none h-auto"
-                  src={"/images/features-03-image-01.png"}
+                  src={"/images/service-01.jpg"}
                   width={540}
                   height={405}
                   alt="service-img"
@@ -93,7 +93,7 @@ export default function Services() {
               >
                 <Image
                   className="max-w-full mx-auto md:max-w-none h-auto"
-                  src={"/images/features-03-image-02.png"}
+                  src={"/images/service-02.jpg"}
                   width={540}
                   height={405}
                   alt="service-img"
@@ -158,7 +158,7 @@ export default function Services() {
               >
                 <Image
                   className="max-w-full mx-auto md:max-w-none h-auto"
-                  src={"/images/features-03-image-03.png"}
+                  src={"/images/service-03.jpg"}
                   width={540}
                   height={405}
                   alt="service-img"
