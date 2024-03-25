@@ -3,7 +3,7 @@
 
 export default function Hero() {
   return (
-    <section id="hero" className="">
+    <section id="hero">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Illustration behind hero content */}
         <div
