@@ -32,7 +32,7 @@ export default function Testimonials() {
                     alt="Testimonial 01"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -50,7 +50,7 @@ export default function Testimonials() {
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a
-                  className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board
@@ -74,7 +74,7 @@ export default function Testimonials() {
                     alt="Testimonial 02"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -92,7 +92,7 @@ export default function Testimonials() {
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a
-                  className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board
@@ -116,7 +116,7 @@ export default function Testimonials() {
                     alt="Testimonial 03"
                   />
                   <svg
-                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-purple-600"
+                    className="absolute top-0 right-0 -mr-3 w-6 h-5 fill-current text-sky-600"
                     viewBox="0 0 24 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -134,7 +134,7 @@ export default function Testimonials() {
                 <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
                 -{" "}
                 <a
-                  className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board

@@ -115,19 +115,21 @@ export const metadata = {
 };
 
 import Hero from "@/components/hero";
-import Features from "@/components/features";
+import AboutUs from "@/components/aboutUs";
 import Newsletter from "@/components/newsletter";
-import Zigzag from "@/components/zigzag";
+import Services from "@/components/services";
 import Testimonials from "@/components/testimonials";
+import PageIllustration from "@/components/page-illustration";
 
 export default function Home() {
   return (
-    <>
+    <main className="grow">
+      <PageIllustration />
       <Hero />
-      <Features />
-      <Zigzag />
-      <Testimonials />
-      <Newsletter />
-    </>
+      <AboutUs />
+      <Services />
+      {/* <Testimonials /> */}
+      {/* <Newsletter /> */}
+    </main>
   );
 }
