@@ -54,7 +54,7 @@ export default function AboutUs() {
               <h4 className="h4 mb-2">Results driven</h4>
               <p className="text-lg text-gray-400 text-center">
                 Our goal is to deliver high quality products at the optimal cost
-                in order to surpuss the client's expectations
+                in order to surpuss the client&apos;s expectations
               </p>
             </div>
 

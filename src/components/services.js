@@ -32,7 +32,7 @@ export default function Services() {
                   src={"/images/features-03-image-01.png"}
                   width={540}
                   height={405}
-                  alt="Features 01"
+                  alt="service-img"
                 />
               </div>
               {/* Content */}
@@ -96,7 +96,7 @@ export default function Services() {
                   src={"/images/features-03-image-02.png"}
                   width={540}
                   height={405}
-                  alt="Features 02"
+                  alt="service-img"
                 />
               </div>
               {/* Content */}
@@ -161,7 +161,7 @@ export default function Services() {
                   src={"/images/features-03-image-03.png"}
                   width={540}
                   height={405}
-                  alt="Features 03"
+                  alt="service-img"
                 />
               </div>
               {/* Content */}
