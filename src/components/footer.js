@@ -50,7 +50,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="pb-12 pt-6 md:py-16 bg-sky-800/30 border-t-2 border-gray-500/50">
+      <div className="pb-12 pt-6 md:py-12 bg-sky-800/30 border-t-2 border-gray-500/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
           {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
