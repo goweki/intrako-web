@@ -224,7 +224,7 @@ export function BriefServices() {
   return (
     <div className="p-5 w-full" id="brief-services">
       <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="my-auto flex flex-col space-y-4 p-8">
+        <div className="my-auto flex flex-col space-y-4 m-3 md:m-6">
           <div>
             <div className="border-2 text-sm rounded-full inline py-2 px-4">
               Services
