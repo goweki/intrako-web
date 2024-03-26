@@ -5,13 +5,10 @@ export default function Services() {
   return (
     <section id="services">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
+        <div className="py-8 md:py-10">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-slate-950 bg-orange-100 rounded-full mb-4">
-              here for your next product success
-            </div>
-            <h1 className="h2 mb-4">Customized Marketing Solutions</h1>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h4 mb-4">Customized Marketing Solutions</h2>
             <p className="text-xl text-gray-400">
               Our marketing services are bespoke, with complementary services to
               give your business that extra confidence when putting products to
@@ -224,7 +221,7 @@ export function BriefServices() {
   return (
     <div className="p-5 w-full" id="brief-services">
       <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="my-auto flex flex-col space-y-4 m-3 md:m-6">
+        <div className="flex flex-col flex-grow justify-center space-y-4 m-3 md:m-6">
           <div>
             <div className="border-2 text-sm rounded-full inline py-2 px-4">
               Services
