@@ -34,23 +34,23 @@ export default function Footer() {
         if (json_.success) {
           console.log(
             "SUCCESS: message sent\n > " +
-              JSON.stringify(json_) +
-              "\n.............."
+            JSON.stringify(json_) +
+            "\n.............."
           );
           toast.success("Request submitted!");
           setEmail("");
         } else if (json_.error) {
           console.error(
             "ERROR: failed sending message-contact1\n > " +
-              JSON.stringify(json_) +
-              "\n.............."
+            JSON.stringify(json_) +
+            "\n.............."
           );
           toast.error("Subscription request failed");
         } else {
           console.error(
             "ERROR: failed sending email subscription request\n > " +
-              JSON.stringify(json_) +
-              "\n.............."
+            JSON.stringify(json_) +
+            "\n.............."
           );
           toast.error("No Response");
         }
@@ -84,7 +84,7 @@ export default function Footer() {
                   href="/aboutUs"
                   className="text-gray-400 hover:text-gray-200 transition duration-150 ease-in-out"
                 >
-                  Blog
+                  About Us
                 </Link>
               </li>
               <li className="mb-2">
@@ -120,8 +120,8 @@ export default function Footer() {
                 <div className="col-span-3">
                   <input
                     type="email"
-                    className="w-full appearance-none bg-sky-800 border border-sky-500 focus:border-sky-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-sky-400"
-                    placeholder="Enter your email"
+                    className="w-full appearance-none bg-sky-800 border border-sky-500 focus:border-sky-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-sky-300 placeholder:italic"
+                    placeholder="Enter your email..."
                     aria-label="email"
                     onChange={(e) => setEmail(e.target.value)}
                   />

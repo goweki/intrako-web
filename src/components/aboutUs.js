@@ -5,15 +5,16 @@ export default function AboutUs() {
   return (
     <section id="aboutUs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">
-              Our approach is grounded in meticulous research, strategic
-              thinking, and the excellent execution of marketing plans.
+            <h2 className="h4 mb-4">
+              We are an agency with experienced marketing and business talents, that leverage best industry practices
+              to curate and execute targeted marketing and business strategies. Our operations are grounded on meticulous research, strategic
+              thinking, and the innovative application of knowledge.
             </h2>
             <p className="text-xl text-gray-400">
-              At the core of our services are industry best practices and values
+              At the core of our services are the users and clients we serve in addition to the values that guide us:
             </p>
           </div>
 

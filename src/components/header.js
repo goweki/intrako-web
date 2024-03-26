@@ -32,15 +32,10 @@ export default function Header() {
                 <li key={v.name} className="m-4">
                   <Link
                     href={v.link}
-                    className={`${
-                      pathname !== "/" && pathname === v.link
-                        ? "text-orange-300 font-bold"
-                        : pathname === v.link
-                        ? "font-bold text-orange-300"
-                        : ""
-                    } ${
-                      pathname === "/" ? "" : "text-slate-100"
-                    } hover:underline`}
+                    className={`${pathname === v.link
+                      ? "font-bold text-orange-300"
+                      : "text-slate-100"
+                      } hover:underline`}
                   >
                     {v.name}
                   </Link>
@@ -162,7 +157,7 @@ export default function Header() {
 
 const menuItems = [
   { name: "Home", link: "/" },
-  { name: "About", link: "/#aboutUs" },
-  { name: "Services", link: "/#services" },
+  { name: "About Us", link: "/aboutUs" },
+  { name: "Services", link: "/services" },
   { name: "Contacts", link: "/contacts" },
 ];
