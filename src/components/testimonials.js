@@ -47,7 +47,7 @@ export default function Testimonials() {
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">John Doe</cite> -{" "}
                 <a
-                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-400 hover:text-sky-600 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Macha logistics
@@ -86,7 +86,7 @@ export default function Testimonials() {
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Mana mania</cite> -{" "}
                 <a
-                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-400 hover:text-sky-600 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   ONGL beef
@@ -125,7 +125,7 @@ export default function Testimonials() {
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Jane Doe</cite> -{" "}
                 <a
-                  className="text-sky-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-sky-400 hover:text-sky-600 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Tourism Board

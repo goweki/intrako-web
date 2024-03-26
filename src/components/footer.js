@@ -4,7 +4,9 @@ import Link from "next/link";
 import toast from "react-hot-toast";
 
 export default function Footer() {
+  //STATES - email
   const [email, setEmail] = useState("");
+  //FUNC - handleSubscribe
   function handleSubscribe(e) {
     e.preventDefault();
     if (!email) {
@@ -58,6 +60,7 @@ export default function Footer() {
         console.error("ERROR: caught error -footer\n > " + err.error || err);
       });
   }
+  //RETURN
   return (
     <footer className="border-gray-500/50 border-y-2 bg-gray-800" id="footer">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

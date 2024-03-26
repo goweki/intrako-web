@@ -294,9 +294,9 @@ export default function AboutUs() {
 export function BriefAboutUs() {
   return (
     <div className="p-5 w-full" id="brief-aboutUs">
-      <div className="max-w-6xl  m-auto grid grid-cols-1 lg:grid-cols-2">
+      <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
         <div
-          className="cols-span-1 p-12 pt-0"
+          className="p-12 pt-0"
           data-aos="fade-up"
           data-aos-delay="800"
         >
@@ -305,7 +305,7 @@ export function BriefAboutUs() {
           </div>
         </div>
         <div
-          className="cols-span-1 m-6"
+          className="m-3 md:m-6"
           data-aos="fade-up"
           data-aos-delay="800"
         >
@@ -360,7 +360,7 @@ export function BriefAboutUs() {
             </ul>
             <div className="flex flex-row justify-start mt-4">
               <Link
-                className="py-2 px-4 bg-transparent border-2 border-orange-400 hover:bg-orange-500 hover:text-black rounded me-6 transition-all"
+                className="text-center py-2 px-4 bg-transparent border-2 border-orange-400 hover:bg-orange-500 hover:text-black rounded me-6 transition-all"
                 href="/aboutUs"
               >
                 Read More
