@@ -39,6 +39,7 @@ export default function Footer() {
           );
           toast.success("Request submitted!");
           setEmail("");
+          console.log("HERE")
         } else if (json_.error) {
           console.error(
             "ERROR: failed sending message-contact1\n > " +
@@ -124,6 +125,7 @@ export default function Footer() {
                     placeholder="Enter your email..."
                     aria-label="email"
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                   />
                 </div>
                 <div className="col-span-1">
