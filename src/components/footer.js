@@ -28,7 +28,7 @@ export default function Footer() {
     fetch("/api/mailer", fetchOptions)
       .then((res_) => {
         if (res_.status === 200) return res_.json();
-        else throw new Error(`status ${res_.status}`);
+        else throw new Error(`HTTP error ${res_.status}`);
       })
       .then((json_) => {
         if (json_.success) {
