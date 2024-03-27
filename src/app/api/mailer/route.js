@@ -2,6 +2,9 @@ import { sendEmail } from "@/lib/sendEmail";
 import { sendSMS } from "@/lib/sendSMS";
 
 export async function POST(request) {
+  console.log(
+    `..........................\nPOST REQUEST: to send email/sms.`
+  );
   if (!process.env.NOTIFY_CHANNELS)
     return Response.json({ error: "no sending channels defined" });
   try {
@@ -9,9 +12,6 @@ export async function POST(request) {
     const channels = process.env.NOTIFY_CHANNELS.split(" ");
     // request body
     const doc = await request.json();
-    console.log(
-      `POST REQUEST: to send alert. \n >> \n..........................`
-    );
     let mailerRes = {};
     if (channels.includes("email")) {
       const res_ = await sendEmail(doc);
@@ -28,8 +28,7 @@ export async function POST(request) {
   } catch (error) {
     // handle ERROR if caught
     console.log(
-      `ERROR: error caught in mailer route -POST\n >> ${
-        error.error || error
+      `ERROR: error caught in mailer route -POST\n >> ${error.error || error
       }\n.........................`
     );
     return Response.json({ error: "Message was not sent" });

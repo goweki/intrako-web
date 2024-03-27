@@ -1,4 +1,8 @@
 import nodemailer from "nodemailer";
+const gmailUsername = process.env.GMAIL_ACCOUNT_USERNAME
+const gmailAppKey = process.env.GMAIL_APP_KEY
+const gmailFrom = process.env.GMAIL_ACCOUNT_FROM
+const gmailTo = process.env.GMAIL_ACCOUNT_TO
 
 export async function sendEmail(data) {
   try {
@@ -6,24 +10,30 @@ export async function sendEmail(data) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.GMAIL_ACCOUNT_USERNAME,
-        pass: process.env.GMAIL_APP_KEY,
+        user: gmailUsername,
+        pass: gmailAppKey,
       },
     });
     // nodemailer options
     const mailOptions = {
-      from: process.env.GMAIL_ACCOUNT_FROM,
-      to: process.env.GMAIL_ACCOUNT_TO,
+      from: gmailFrom,
+      to: gmailTo,
       subject: data.subject,
       text: data.text,
     };
-    console.log(`CHECKPOINT: Sending email \n >> \n..........................`);
+    console.log(` > CHECKPOINT: Sending email`);
     // send email
     const result = await transporter.sendMail(mailOptions);
-    if (result.accepted.length > 0) return { success: result };
-    else return { error: "email was not sent - " };
+    if (result.accepted.length > 0) {
+      console.log(` >> SUCCESS: Email sent \n..........................`);
+      return { success: result }
+    }
+    else {
+      console.error(` >> FAILED: Email was not sent \n..........................`);
+      return { error: "email was not sent - " }
+    };
   } catch (error) {
-    console.log("ERROR: email not sent " + error + "\n............");
-    return { error: "mail was not sent" };
+    console.error(" >> FAILED: Email was not sent " + error + "\n...........................");
+    return { error: "Email was not sent" };
   }
 }
