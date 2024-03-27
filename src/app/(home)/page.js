@@ -1,8 +1,8 @@
 import Hero from "@/components/hero";
+import PageIllustration from "@/components/page-illustration";
 import { BriefAboutUs } from "@/components/aboutUs";
 import { BriefServices } from "@/components/services";
 import Testimonials from "@/components/testimonials";
-import PageIllustration from "@/components/page-illustration";
 
 export default function Home() {
   return (
