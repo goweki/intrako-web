@@ -5,6 +5,7 @@ export default function AboutUs() {
   return (
     <section id="aboutUs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Mission & Vision */}
         <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
@@ -13,12 +14,52 @@ export default function AboutUs() {
               to curate and execute targeted marketing and business strategies. Our operations are grounded on meticulous research, strategic
               thinking, and the innovative application of knowledge.
             </h2>
-            <p className="text-xl text-gray-400">
+            <h3 className="text-xl text-gray-400">
               At the core of our services are the users and clients we serve in addition to the values that guide us:
+            </h3>
+          </div>
+
+          {/* Mission & Vision */}
+          <div
+            className="p-2 max-w-sm mx-auto grid gap-8 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none"
+            data-aos-id-blocks
+          >
+            {/* 1st item */}
+
+            <div data-aos="zoom-in" className="mx-auto flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
+              <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/service-03.jpg" alt="" />
+              <div className="flex flex-col justify-between p-4 leading-normal">
+                <h5 className="mb-3 font-normal text-gray-700 dark:text-gray-400">MISSION</h5>
+                <p className="max-w-60 mb-2 text-lg font-medium tracking-tight text-gray-900 dark:text-white">This is the mission statement for intrako</p>
+              </div>
+            </div>
+
+
+            {/* 2nd item */}
+            <div data-aos="zoom-in" className="mx-auto flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
+              <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/service-03.jpg" alt="" />
+              <div className="flex flex-col justify-between p-4 leading-normal">
+                <h5 className="mb-3 font-normal text-gray-700 dark:text-gray-400">VISION</h5>
+                <p className="max-w-60 mb-2 text-lg font-medium tracking-tight text-gray-900 dark:text-white">This is the vision for intrako marketing Agency</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        {/* Core values */}
+        <div className="border-t-2 border-gray-600 pb-8 md:pb-10 pt-16 md:pt-20">
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h4 mb-4">
+              Core values
+            </h2>
+            <p className="text-xl text-gray-400">
+              At the core of our services are the values that guide us:
             </p>
           </div>
 
-          {/* Items */}
+          {/* Mission & Vision */}
           <div
             className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
             data-aos-id-blocks
@@ -296,8 +337,7 @@ export function BriefAboutUs() {
   return (
     <div className="p-5 w-full" id="brief-aboutUs">
       <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
-        <div
-          className="p-12 pt-0"
+        <div className="p-12 pt-0"
           data-aos="fade-up"
           data-aos-delay="800"
         >
@@ -305,8 +345,7 @@ export function BriefAboutUs() {
             <img className="img-fluid" src="images/professionals.jpeg" />
           </div>
         </div>
-        <div
-          className="m-3 md:m-6"
+        <div className="m-3 md:m-6"
           data-aos="fade-up"
           data-aos-delay="800"
         >
@@ -366,7 +405,7 @@ export function BriefAboutUs() {
               >
                 Read More
               </Link>
-              <Link
+              {/* <Link
                 className="group flex h-10 w-10 p-2 items-center justify-center border-2 border-sky-500 hover:border-transparent hover:bg-sky-600 rounded-full transition-all me-3"
                 href="https://fb.com/goweki"
               >
@@ -394,13 +433,6 @@ export function BriefAboutUs() {
                 className="group flex h-10 w-10 p-2 items-center justify-center border-2 border-sky-500 hover:border-transparent hover:bg-sky-600 rounded-full transition-all"
                 href="https://twitter.com/goweki_"
               >
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="h-6 w-6 fill-current text-orange-400 group-hover:text-white"
-                >
-                  <path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z" />
-                </svg> */}
                 <svg
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -412,7 +444,7 @@ export function BriefAboutUs() {
                     d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
                   />
                 </svg>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

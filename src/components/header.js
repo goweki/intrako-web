@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MobileMenu from "./atoms/mobileMenu";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,10 +18,11 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="block font-bold text-orange-300 hover:underline"
+              className="block font-bold text-orange-300 hover:scale-110 transition-all"
               aria-label="Intrako"
             >
-              INTRAKO
+              {/* INTRAKO */}
+              <Image height={32} width={80} src={'/images/Intrako_logo.svg'} alt="logo" className="object-cover" />
             </Link>
           </div>
 
