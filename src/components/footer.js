@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12">
           {/* Quick links block */}
           <div className="sm:col-span-6 md:col-span-3 ">
-            <h6 className="text-gray-100 font-medium mb-2">Quick links</h6>
+            <h6 className="text-gray-300 border-gray-400 text-xs font-medium mb-2 inline-block border-b-2">QUICK LINKS</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
@@ -121,7 +121,7 @@ export default function Footer() {
                 <div className="col-span-3">
                   <input
                     type="email"
-                    className="w-full appearance-none bg-sky-800 border border-sky-500 focus:border-sky-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-sky-300 placeholder:italic"
+                    className="w-full appearance-none bg-sky-800 border border-sky-500 focus:border-sky-300 rounded-sm px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-sky-300 placeholder:italic"
                     placeholder="Enter your email..."
                     aria-label="email"
                     onChange={(e) => setEmail(e.target.value)}
