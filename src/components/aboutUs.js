@@ -25,7 +25,6 @@ export default function AboutUs() {
             data-aos-id-blocks
           >
             {/* 1st item */}
-
             <div data-aos="zoom-in" className="mx-auto flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
               <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/service-03.jpg" alt="" />
               <div className="flex flex-col justify-between p-4 leading-normal">
@@ -33,8 +32,6 @@ export default function AboutUs() {
                 <p className="max-w-60 mb-2 text-lg font-medium tracking-tight text-gray-900 dark:text-white">This is the mission statement for intrako</p>
               </div>
             </div>
-
-
             {/* 2nd item */}
             <div data-aos="zoom-in" className="mx-auto flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-gray-800 hover:bg-gray-700">
               <img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/images/service-03.jpg" alt="" />
@@ -48,7 +45,7 @@ export default function AboutUs() {
 
         </div>
         {/* Core values */}
-        <div className="border-t-2 border-gray-600 pb-8 md:pb-10 pt-16 md:pt-20">
+        <div className="border-t-2 border-gray-700 pb-8 md:pb-10 pt-16 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h4 mb-4">
