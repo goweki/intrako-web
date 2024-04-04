@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12">
           {/* Quick links block */}
           <div className="sm:col-span-6 md:col-span-3 ">
-            <h6 className="text-gray-800 font-medium mb-2">Quick links</h6>
+            <h6 className="text-gray-100 font-medium mb-2">Quick links</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link

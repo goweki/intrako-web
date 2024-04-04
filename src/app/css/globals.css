@@ -8,7 +8,20 @@
 @import "additional-styles/toggle-switch.css";
 @import "additional-styles/theme.css";
 
-/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+/* @layer base {
+  h1 {
+    @apply
+  }
+
+  h2 {
+    @apply
+  }
+
+  h3 {
+    @apply
+  }
+} */
+
 @layer utilities {
   .rtl {
     direction: rtl;
