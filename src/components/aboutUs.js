@@ -332,14 +332,16 @@ export default function AboutUs() {
 
 export function BriefAboutUs() {
   return (
-    <div className="p-5 w-full" id="brief-aboutUs">
+    <div className="p-6 w-full" id="brief-aboutUs">
       <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="p-12 pt-0"
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          <div className="about-img rounded-xl overflow-hidden">
-            <img className="img-fluid" src="images/professionals.jpeg" />
+          <div className="w-full h-full flex items-center justify-center">
+            <div className="about-img rounded-xl overflow-hidden">
+              <img className="img-fluid" src="images/professionals.jpeg" />
+            </div>
           </div>
         </div>
         <div className="m-3 md:m-6"

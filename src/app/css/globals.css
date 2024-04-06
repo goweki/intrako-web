@@ -8,19 +8,11 @@
 @import "additional-styles/toggle-switch.css";
 @import "additional-styles/theme.css";
 
-/* @layer base {
-  h1 {
-    @apply
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-
-  h2 {
-    @apply
-  }
-
-  h3 {
-    @apply
-  }
-} */
+}
 
 @layer utilities {
   .rtl {
