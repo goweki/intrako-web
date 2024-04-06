@@ -34,24 +34,24 @@ export default function Footer() {
         if (json_.success) {
           console.log(
             "SUCCESS: message sent\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.success("Request submitted!");
           setEmail("");
-          console.log("HERE")
+          console.log("HERE");
         } else if (json_.error) {
           console.error(
             "ERROR: failed sending message-contact1\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.error("Subscription request failed");
         } else {
           console.error(
             "ERROR: failed sending email subscription request\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.error("No Response");
         }
@@ -63,14 +63,19 @@ export default function Footer() {
   }
   //RETURN
   return (
-    <footer className="border-gray-500/50 border-y-2 bg-gray-800" id="footer">
+    <footer
+      className="border-gray-500/50 border-y-2 bg-gray-800 transition-all"
+      id="footer"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
 
         <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12">
           {/* Quick links block */}
           <div className="sm:col-span-6 md:col-span-3 ">
-            <h6 className="text-gray-300 border-gray-400 text-xs font-medium mb-2 inline-block border-b-2">QUICK LINKS</h6>
+            <h6 className="text-gray-300 border-gray-400 text-xs font-medium mb-2 inline-block border-b-2">
+              QUICK LINKS
+            </h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link

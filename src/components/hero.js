@@ -1,22 +1,33 @@
-// import VideoThumb from '@/public/images/hero-image-01.jpg'
-// import ModalVideo from '@/components/modal-video'
-
+'use client'
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Hero() {
+  const [top, setTop] = useState(true);
+  // detect whether user has scrolled the page down by 200px
+  useEffect(() => {
+    //FUNC executed onScroll
+    function scrollHandler() {
+      window.scrollY > 200 ? setTop(false) : setTop(true);
+    }
+    //eventListener - scroll
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
   return (
-    <section id="hero" className="sm:h-screen bg-cover bg-[url('/images/professionals.jpeg')] overflow-hidden">
-      <div className="relative w-full h-full flex flex-col bg-sky-900/80 items-center justify-center">
+    <section id="hero" className="sm:h-screen bg-cover bg-[url('/images/blue-animations.gif')] overflow-hidden">
+      <div className="relative w-full h-full flex flex-col bg-primary/50 items-center justify-center">
         <div className="max-w-6xl px-4 sm:px-6 relative">
           {/* Hero content */}
           <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-              <h1 className="h1 mb-4" data-aos="fade-up">
+              <h1 className="h1 mb-4 text-gray-200" data-aos="fade-up">
                 Your partner in marketing and business development
               </h1>
               <p
-                className="text-xl text-gray-400 mb-8"
+                className="text-xl text-gray-300 mb-8"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -53,8 +64,8 @@ export default function Hero() {
           </div>
         </div>
         {/* scrool down button */}
-        <Link href='#brief-aboutUs' className="animate-bounce">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <Link href='#brief-aboutUs' className={`transition-all ${top ? 'animate-bounce' : 'hidden'}`}>
+          <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-white fill-none stroke-2">
             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
           </svg>
         </Link>

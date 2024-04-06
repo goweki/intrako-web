@@ -1,15 +1,30 @@
 "use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MobileMenu from "./atoms/mobileMenu";
-import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
+  const [top, setTop] = useState(true);
+
+  // detect whether user has scrolled the page down by 32px
+  useEffect(() => {
+    //FUNC executed onScroll
+    function scrollHandler() {
+      window.scrollY > 32 ? setTop(false) : setTop(true);
+    }
+    //eventListener - scroll
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
+
   return (
     <header
       id="header"
-      className="fixed w-full z-30"
+      className={`w-full z-30 fixed transition-all ${top ? '' : 'bg-primary/80 backdrop-blur-md shadow'}`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between min-h-16">
