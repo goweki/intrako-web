@@ -13,7 +13,7 @@
     @apply scroll-smooth
   } */
   html,body {
-    @apply scroll-smooth bg-gray-100 text-gray-800 antialiased tracking-tight
+    @apply scroll-smooth bg-gray-200 text-gray-800 antialiased tracking-tight
   }
 }
 
