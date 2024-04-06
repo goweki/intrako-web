@@ -126,7 +126,7 @@ export default function Footer() {
                 <div className="col-span-3">
                   <input
                     type="email"
-                    className="w-full appearance-none bg-gray-400 border border-secondary focus:border-purple-300 rounded-sm px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-600 placeholder:italic"
+                    className="w-full appearance-none bg-gray-400 border border-secondary focus:border-purple-300 rounded-sm px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-600 placeholder:italic"
                     placeholder="Enter your email..."
                     aria-label="email"
                     onChange={(e) => setEmail(e.target.value)}
