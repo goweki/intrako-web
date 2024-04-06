@@ -9,8 +9,11 @@
 @import "additional-styles/theme.css";
 
 @layer base {
-  html {
+  /* html {
     @apply scroll-smooth
+  } */
+  html,body {
+    @apply scroll-smooth bg-gray-100 text-gray-800
   }
 }
 
