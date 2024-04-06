@@ -88,7 +88,7 @@ export function CardCoreValues({ title, content, children }) {
     >
       {children}
       <h4 className="h4 mb-2">{title}</h4>
-      <p className="text-lg text-gray-400 text-center">{content}</p>
+      <p className="text-lg text-gray-600 text-center">{content}</p>
     </div>
   );
 }
