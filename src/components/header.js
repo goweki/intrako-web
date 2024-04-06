@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed w-full z-30 bg-gray-800/80 backdrop-blur-xl"
+      className="fixed w-full z-30"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between min-h-16">
