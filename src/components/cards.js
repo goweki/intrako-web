@@ -78,3 +78,17 @@ export function CardMission({ title, content, image }) {
     </div>
   );
 }
+
+export function CardCoreValues({ title, content, children }) {
+  return (
+    <div
+      className="relative flex flex-col items-center rounded border-2 border-gray-300 p-6"
+      data-aos="fade-up"
+      data-aos-anchor="[data-aos-id-blocks]"
+    >
+      {children}
+      <h4 className="h4 mb-2">{title}</h4>
+      <p className="text-lg text-gray-400 text-center">{content}</p>
+    </div>
+  );
+}
