@@ -223,7 +223,7 @@ export function BriefServices() {
     <section className="px-6 py-24 w-full bg-primary/20" id="brief-services">
       <div className="max-w-6xl m-auto grid grid-cols-1">
         <div data-aos="fade-down" data-aos-delay="400" className="mx-auto">
-          <div className="m-auto md:m-6 border-2 text-lg bg-primary text-white rounded-full inline py-2 px-4">
+          <div className="m-auto md:m-6 text-lg bg-primary text-white rounded-full inline py-2 px-4 border-0">
             {" "}
             Our Services
           </div>

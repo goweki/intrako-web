@@ -161,7 +161,7 @@ export default function Footer() {
             <li>
               <Link
                 href="https://www.twitter.com/goweki_"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Twitter"
               >
                 <svg
@@ -176,7 +176,7 @@ export default function Footer() {
             <li className="ml-4">
               <Link
                 href="https://www.github.com/goweki"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Github"
               >
                 <svg
@@ -191,7 +191,7 @@ export default function Footer() {
             <li className="ml-4">
               <Link
                 href="https://www.facebook.com/goweki"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Facebook"
               >
                 <svg
@@ -208,7 +208,7 @@ export default function Footer() {
           {/* Copyrights note */}
           <div className="text-sm text-gray-400 mr-4">
             <Link
-              className="text-sky-300 hover:underline"
+              className="text-purple-300 hover:underline"
               href="https://goweki.com/"
             >
               Intrako

@@ -7,7 +7,6 @@ export default function AboutUs() {
   return (
     <section id="aboutUs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Mission & Vision */}
         <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
@@ -257,7 +256,7 @@ export function BriefAboutUs() {
     <section className="px-6 pt-24 pb-16 w-full" id="brief-aboutUs">
       <div className="max-w-6xl m-auto grid grid-cols-1">
         <div data-aos="fade-down" data-aos-delay="200" className="mx-auto">
-          <div className="m-auto md:m-6 border-2 text-lg bg-primary text-white rounded-full inline py-2 px-4">
+          <div className="m-auto md:m-6 text-lg bg-primary text-white rounded-full inline py-2 px-4 border-0">
             About Us
           </div>
         </div>

@@ -68,12 +68,12 @@ export default function MobileMenu({ menuItems }) {
             : { maxHeight: 0, opacity: 0.8 }
         }
       >
-        <ul className="bg-gray-800 px-4 py-2">
+        <ul className="bg-primary p-4">
           {menuItems.map((v, i) => (
             <li key={v.name}>
               <Link
                 href={v.link}
-                className="flex font-medium w-full hover:bg-sky-600 hover:text-gray-200 py-2 justify-center"
+                className="rounded flex font-medium w-full hover:bg-secondary text-gray-200 hover:text-gray-800 py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 {v.name}
