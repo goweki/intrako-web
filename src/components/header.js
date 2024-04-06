@@ -12,7 +12,7 @@ export default function Header() {
       className="fixed w-full z-30 bg-gray-800/80 backdrop-blur-xl"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between min-h-16">
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
@@ -31,7 +31,7 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               {menuItems.map((v) => (
-                <li key={v.name} className="m-4">
+                <li key={v.name} className="mx-4">
                   <Link
                     href={v.link}
                     className={`${pathname === v.link

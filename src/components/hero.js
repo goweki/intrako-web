@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="h-screen bg-cover bg-[url('/images/professionals.jpeg')]">
-      <div className="relative w-full h-full flex flex-col bg-gray-800/80 items-center justify-center">
+    <section id="hero" className="sm:h-screen bg-cover bg-[url('/images/professionals.jpeg')] overflow-hidden">
+      <div className="relative w-full h-full flex flex-col bg-sky-900/80 items-center justify-center">
         <div className="max-w-6xl px-4 sm:px-6 relative">
           {/* Hero content */}
           <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">

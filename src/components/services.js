@@ -219,129 +219,134 @@ export default function Services() {
 
 export function BriefServices() {
   return (
-    <div className="p-5 w-full" id="brief-services">
-      <div className="max-w-6xl m-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col flex-grow justify-center space-y-4 m-3 md:m-6">
-          <div>
-            <div className="border-2 text-sm rounded-full inline py-2 px-4">
-              Services
-            </div>
-          </div>
-          <h2 className="h2 mb-4">
-            Bespoke marketing and business development services for the modern
-            firm
-          </h2>
-          <p className="mb-4">
-            Our services are tailored to individual clients needs. The primary
-            goal in our operatios is setting products on the path to success
-          </p>
-          <div className="flex justify-start">
-            <Link
-              className="py-2 px-4 bg-transparent border-2 border-orange-400 hover:bg-orange-500 hover:text-black rounded me-6 transition-all"
-              href="/services"
-            >
-              Read More
-            </Link>
+    <section className="px-6 py-24 w-full bg-sky-800/50" id="brief-services">
+      <div className="max-w-6xl m-auto grid grid-cols-1">
+        <div data-aos="fade-down"
+          data-aos-delay="400" className="mx-auto">
+          <div className="m-auto md:m-6 border-2 text-xl rounded-full inline py-2 px-4">
+            Our Services
           </div>
         </div>
-
-        <div className="flex flex-col md:flex-row p-8">
-          <div className="flex flex-col">
-            <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-800 hover:border-sky-300/50 transition-all cursor-default">
-              <div className="rounded-full p-4 bg-transparent group-hover:bg-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 fill-current"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
-                Marketing
-              </h5>
-              <p className="text-center min-h-20">
-                Put the best foot forward when launching and selling products
+        <div className="m-3 md:m-6"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div className="my-auto flex flex-col space-4">
+            <h2 className="h2 mb-4 text-center max-w-3xl m-auto">
+              Bespoke marketing and business development services for the modern
+              firm
+            </h2>
+            <div className="flex flex-col my-4">
+              <p className="mb-4 text-center  text-lg">
+                Our services are tailored to individual clients needs. The primary
+                goal in our operatios is setting products on the path to success
               </p>
+              <Link
+                className=" self-center mx-6 text-center h-fit w-fit text-nowrap py-2 px-4 bg-transparent border-2 border-orange-400 hover:bg-orange-500 hover:text-black rounded me-6 transition-all"
+                href="/services"
+              >
+                More about our services
+              </Link>
+            </div>
+            <div className="flex flex-col md:flex-row p-8">
+              <div className="flex flex-col">
+                <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-600 hover:border-sky-300/50 transition-all cursor-default">
+                  <div className="rounded-full p-4 bg-transparent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 fill-current group-hover:scale-110 transition-all"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
+                    Marketing
+                  </h5>
+                  <p className="text-center min-h-20">
+                    Put the best foot forward when launching and selling products
+                  </p>
+                </div>
+
+                <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-600 hover:border-sky-300/50 transition-all cursor-default">
+                  <div className="rounded-full p-4 bg-transparent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 fill-current group-hover: transition-all"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
+                    Branding
+                  </h5>
+                  <p className="text-center min-h-20">
+                    Branding forms a core part of product identity and customer
+                    perception
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col">
+                <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-600 hover:border-sky-300/50 transition-all cursor-default">
+                  <div className="rounded-full p-4 bg-transparent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 fill-current group-hover:scale-110"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
+                    Service 3
+                  </h5>
+                  <p className="text-center min-h-20">
+                    Sample text, Bridging the gap between users and service
+                    providers
+                  </p>
+                </div>
+
+                <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-600 hover:border-sky-300/50 transition-all cursor-default">
+                  <div className="rounded-full p-4 bg-transparent">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6 fill-current group-hover:scale-110 transition-all"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
+                    Service 4
+                  </h5>
+                  <p className="text-center min-h-20">
+                    Sample text, Curating the next generation of top businesses
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-800 hover:border-sky-300/50 transition-all cursor-default">
-              <div className="rounded-full p-4 bg-transparent group-hover:bg-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
-                Branding
-              </h5>
-              <p className="text-center min-h-20">
-                Branding forms a core part of product identity and customer
-                perception
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-800 hover:border-sky-300/50 transition-all cursor-default">
-              <div className="rounded-full p-4 bg-transparent group-hover:bg-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 fill-current"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
-                Service 3
-              </h5>
-              <p className="text-center min-h-20">
-                Sample text, Bridging the gap between users and service
-                providers
-              </p>
-            </div>
-
-            <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-2 border-gray-800 hover:border-sky-300/50 transition-all cursor-default">
-              <div className="rounded-full p-4 bg-transparent group-hover:bg-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 fill-current"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.25 2.25a.75.75 0 0 0 0 1.5H3v10.5a3 3 0 0 0 3 3h1.21l-1.172 3.513a.75.75 0 0 0 1.424.474l.329-.987h8.418l.33.987a.75.75 0 0 0 1.422-.474l-1.17-3.513H18a3 3 0 0 0 3-3V3.75h.75a.75.75 0 0 0 0-1.5H2.25Zm6.54 15h6.42l.5 1.5H8.29l.5-1.5Zm8.085-8.995a.75.75 0 1 0-.75-1.299 12.81 12.81 0 0 0-3.558 3.05L11.03 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l2.47-2.47 1.617 1.618a.75.75 0 0 0 1.146-.102 11.312 11.312 0 0 1 3.612-3.321Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <h5 className="mb-3 group-hover:text-sky-400 font-semibold">
-                Service 4
-              </h5>
-              <p className="text-center min-h-20">
-                Sample text, Curating the next generation of top businesses
-              </p>
-            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
