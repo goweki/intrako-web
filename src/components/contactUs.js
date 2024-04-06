@@ -80,10 +80,7 @@ export default function ContactUs() {
         <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-4">
-            <h2 className="h4">
-              We are social. leave us a message and we will gladly look into
-              your communication
-            </h2>
+            <h2 className="h4">We are social. Reach out to us...</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div>
@@ -200,7 +197,7 @@ export default function ContactUs() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic"
+                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic placeholder-gray-500"
                   />
                 </div>
                 <div className="mt-6">
@@ -214,7 +211,7 @@ export default function ContactUs() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic"
+                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic placeholder-gray-500"
                   />
                 </div>
                 <div className="mt-6">
@@ -227,10 +224,10 @@ export default function ContactUs() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
-                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic"
+                    className="mt-2 w-full border-none text-sm p-4 bg-primary/20 placeholder:italic placeholder-gray-500"
                   ></textarea>
                 </div>
-                <button className="inline-block bg-orange-400 hover:bg-orange-600 rounded text-black text-sm font-semibold tracking-widest font-heading px-8 py-4 mt-6">
+                <button className="inline-block bg-secondary hover:bg-orange-500 rounded text-black text-sm font-semibold tracking-widest font-heading px-8 py-4 mt-6">
                   Send Message
                 </button>
               </form>
