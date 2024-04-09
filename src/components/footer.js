@@ -34,24 +34,24 @@ export default function Footer() {
         if (json_.success) {
           console.log(
             "SUCCESS: message sent\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.success("Request submitted!");
           setEmail("");
-          console.log("HERE")
+          console.log("HERE");
         } else if (json_.error) {
           console.error(
             "ERROR: failed sending message-contact1\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.error("Subscription request failed");
         } else {
           console.error(
             "ERROR: failed sending email subscription request\n > " +
-            JSON.stringify(json_) +
-            "\n.............."
+              JSON.stringify(json_) +
+              "\n.............."
           );
           toast.error("No Response");
         }
@@ -63,19 +63,24 @@ export default function Footer() {
   }
   //RETURN
   return (
-    <footer className="border-gray-500/50 border-y-2 bg-gray-800" id="footer">
+    <footer
+      className="border-gray-500/50 border-y-2 bg-gray-800 transition-all"
+      id="footer"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
 
         <div className="grid sm:grid-cols-6 gap-8 py-8 md:py-12">
           {/* Quick links block */}
           <div className="sm:col-span-6 md:col-span-3 ">
-            <h6 className="text-gray-300 border-gray-400 text-xs font-medium mb-2 inline-block border-b-2">QUICK LINKS</h6>
+            <h6 className="text-gray-300 border-gray-400 text-xs font-medium mb-2 inline-block border-b-2">
+              QUICK LINKS
+            </h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
                   href="/"
-                  className="text-gray-400 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-gray-400 hover:text-purple-200 transition duration-150 ease-in-out"
                 >
                   Home
                 </Link>
@@ -83,7 +88,7 @@ export default function Footer() {
               <li className="mb-2">
                 <Link
                   href="/aboutUs"
-                  className="text-gray-400 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-gray-400 hover:text-purple-200 transition duration-150 ease-in-out"
                 >
                   About Us
                 </Link>
@@ -91,7 +96,7 @@ export default function Footer() {
               <li className="mb-2">
                 <Link
                   href="/services"
-                  className="text-gray-400 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-gray-400 hover:text-purple-200 transition duration-150 ease-in-out"
                 >
                   Services
                 </Link>
@@ -99,7 +104,7 @@ export default function Footer() {
               <li className="mb-2">
                 <Link
                   href="/contacts"
-                  className="text-gray-400 hover:text-gray-200 transition duration-150 ease-in-out"
+                  className="text-gray-400 hover:text-purple-200 transition duration-150 ease-in-out"
                 >
                   Contacts
                 </Link>
@@ -121,7 +126,7 @@ export default function Footer() {
                 <div className="col-span-3">
                   <input
                     type="email"
-                    className="w-full appearance-none bg-sky-800 border border-sky-500 focus:border-sky-300 rounded-sm px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-sky-300 placeholder:italic"
+                    className="w-full appearance-none bg-gray-400 border border-secondary focus:border-purple-300 rounded-sm px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-600 placeholder:italic"
                     placeholder="Enter your email..."
                     aria-label="email"
                     onChange={(e) => setEmail(e.target.value)}
@@ -131,14 +136,14 @@ export default function Footer() {
                 <div className="col-span-1">
                   <button
                     type="submit"
-                    className="rounded-lg w-full h-full bg-sky-600 disabled:opacity-25 enabled:hover:bg-sky-700"
+                    className="rounded-lg w-full h-full bg-secondary disabled:opacity-25"
                     disabled={!email}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className="w-6 h-6 m-auto text-white"
+                      className="w-6 h-6 m-auto text-black"
                     >
                       <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
                     </svg>
@@ -156,7 +161,7 @@ export default function Footer() {
             <li>
               <Link
                 href="https://www.twitter.com/goweki_"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Twitter"
               >
                 <svg
@@ -171,7 +176,7 @@ export default function Footer() {
             <li className="ml-4">
               <Link
                 href="https://www.github.com/goweki"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Github"
               >
                 <svg
@@ -186,7 +191,7 @@ export default function Footer() {
             <li className="ml-4">
               <Link
                 href="https://www.facebook.com/goweki"
-                className="flex justify-center items-center text-gray-200 hover:bg-sky-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-200 hover:text-gray-800 hover:bg-secondary rounded-full shadow transition-all duration-150 ease-in-out"
                 aria-label="Facebook"
               >
                 <svg
@@ -203,7 +208,7 @@ export default function Footer() {
           {/* Copyrights note */}
           <div className="text-sm text-gray-400 mr-4">
             <Link
-              className="text-sky-300 hover:underline"
+              className="text-purple-300 hover:underline"
               href="https://goweki.com/"
             >
               Intrako

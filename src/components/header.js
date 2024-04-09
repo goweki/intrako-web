@@ -1,18 +1,34 @@
 "use client";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MobileMenu from "./atoms/mobileMenu";
-import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
+  const [top, setTop] = useState(true);
+
+  // detect whether user has scrolled the page down by 32px
+  useEffect(() => {
+    //FUNC executed onScroll
+    function scrollHandler() {
+      window.scrollY > 32 ? setTop(false) : setTop(true);
+    }
+    //eventListener - scroll
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
+
   return (
     <header
       id="header"
-      className="fixed w-full z-30 bg-gray-800/50 backdrop-blur-xl"
+      className={`w-full z-30 fixed transition-all ${
+        top ? "" : "bg-primary/80 backdrop-blur-md shadow"
+      }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between min-h-16">
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
@@ -22,7 +38,13 @@ export default function Header() {
               aria-label="Intrako"
             >
               {/* INTRAKO */}
-              <Image height={32} width={80} src={'/images/Intrako_logo.svg'} alt="logo" className="object-cover" />
+              <Image
+                height={32}
+                width={80}
+                src={"/images/Intrako_logo.svg"}
+                alt="logo"
+                className="object-cover"
+              />
             </Link>
           </div>
 
@@ -31,13 +53,14 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               {menuItems.map((v) => (
-                <li key={v.name} className="m-4">
+                <li key={v.name} className="mx-4">
                   <Link
                     href={v.link}
-                    className={`${pathname === v.link
-                      ? "font-bold text-orange-300"
-                      : "text-slate-100"
-                      } hover:underline`}
+                    className={`${
+                      pathname === v.link
+                        ? "font-bold text-orange-300"
+                        : "text-slate-100"
+                    } hover:underline`}
                   >
                     {v.name}
                   </Link>
@@ -52,110 +75,6 @@ export default function Header() {
     </header>
   );
 }
-
-// "use client";
-// import { useState } from "react";
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-
-// export default function Header() {
-//   const pathname = usePathname();
-//   const [showMenu, setShowMenu] = useState(false);
-
-//   return (
-//     <div id="navbar" className="absolute h-24 z-50 w-full">
-//       <div className="flex flex-row justify-between max-w-screen-xl p-6 m-auto">
-//         {/* logo */}
-//         <div id="logo" className="flex items-center justify-center">
-//           <Link
-//             href="/"
-//             className="text-white uppercase font-bold text-2xl tracking-widest mix-blend-darken"
-//           >
-//             {/* <img src="{{ settings.logo }}" className="h-20 w-64 object-contain object-center" /> */}
-//             INTRAKO
-//           </Link>
-//         </div>
-//         {/* menu items */}
-//         <div id="menuItems" className="lg:flex flex-row gap-4 hidden mr-4">
-//           {menuItems.map((v) => (
-//             <Link
-//               key={v.name}
-//               href={v.link}
-//               className={`${
-//                 pathname !== "/" && pathname === v.link
-//                   ? "text-blue-300 font-bold"
-//                   : pathname === v.link
-//                   ? "font-bold text-blue-600"
-//                   : ""
-//               } ${pathname === "/" ? "" : "text-slate-100"} hover:underline`}
-//             >
-//               {v.name}
-//             </Link>
-//           ))}
-//           {/* <ThemeToggler /> */}
-//         </div>
-//         {/* hamburger menu - upto lg-screen */}
-//         <div id="hamburgerMenu" className="flex items-center lg:hidden">
-//           <button onClick={() => setShowMenu((prev) => !prev)}>
-//             <svg
-//               className={`w-8 h-8 ${pathname !== "/" ? "text-slate-300" : ""}`}
-//               fill="none"
-//               stroke="currentColor"
-//               viewBox="0 0 24 24"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path
-//                 strokeLinecap="round"
-//                 strokeLinejoin="round"
-//                 strokeWidth="2"
-//                 d="M4 6h16M4 12h16M4 18h16"
-//               ></path>
-//             </svg>
-//           </button>
-
-//           {showMenu && (
-//             <div className="transition-all fixed inset-0 w-full h-full bg-white z-50 text-blue-800">
-//               <div className="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6">
-//                 <button
-//                   onClick={() => setShowMenu((prev) => !prev)}
-//                   className="absolute top-0 left-0 mt-8 ml-6"
-//                 >
-//                   <svg
-//                     className="w-8 h-8"
-//                     fill="none"
-//                     stroke="currentColor"
-//                     viewBox="0 0 24 24"
-//                     xmlns="http://www.w3.org/2000/svg"
-//                   >
-//                     <path
-//                       strokeLinecap="round"
-//                       strokeLinejoin="round"
-//                       strokeWidth="2"
-//                       d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-//                     ></path>
-//                   </svg>
-//                 </button>
-//                 {/* {% if navigation.items %} */}
-//                 {/* {% for item in navigation.items %} */}
-//                 {menuItems.map((v) => (
-//                   <Link
-//                     key={v.name}
-//                     href={v.link}
-//                     onClick={() => setShowMenu(false)}
-//                     className="transition-all inline-block border-b-4 border-transparent hover:border-blue-900"
-//                   >
-//                     {v.name}
-//                   </Link>
-//                 ))}
-//               </div>
-//               <div className="absolute inset-0 w-full h-full bg-blue-900 bg-opacity-30"></div>
-//             </div>
-//           )}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 const menuItems = [
   { name: "Home", link: "/" },

@@ -6,7 +6,7 @@ import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
-    <main className="grow">
+    <main className="grow transition-all">
       <PageIllustration />
       <Hero />
       <BriefAboutUs />

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#29028E',
+        secondary: '#F4901E'
+      },
       animation: {
         fade: "fadeIn 1s cubic-bezier(0.4, 0, 1, 1)",
         "up-in": "moveUpDown .5s ease-out",
