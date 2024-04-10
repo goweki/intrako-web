@@ -23,8 +23,7 @@ if (process.env.NODE_ENV === "development") {
 
 export default clientPromise;
 
-/**** USE
- * const clientResolved = await clientPromise;
- * const db_cluster = clientResolved.db(process.env.ATLAS_DB);
- * ....
+/** USE
+ * const clientResolved = await clientPromise
+ * onst db_cluster = clientResolved.db(process.env.ATLAS_DB)
  */
