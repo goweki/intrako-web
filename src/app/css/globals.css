@@ -9,17 +9,27 @@
 @import "additional-styles/theme.css";
 
 @layer base {
-  /* html {
-    @apply scroll-smooth
-  } */
   html,body {
-    @apply scroll-smooth bg-gray-200 text-gray-800 antialiased tracking-tight
+    @apply scroll-smooth bg-gray-100 text-gray-800 antialiased tracking-tight font-inter
+  }
+
+  h2 {
+    @apply text-6xl font-dancing
+  }
+  h3 {
+    @apply text-3xl font-bold
   }
 }
 
 @layer utilities {
   .rtl {
     direction: rtl;
+  }
+}
+
+@layer components{
+  .btn{
+    @apply  text-gray-700 hover:text-black bg-gradient-to-r from-secondary via-orange-100 to-secondary hover:bg-gradient-to-br hover:shadow-md
   }
 }
 
@@ -39,3 +49,4 @@
   background: url(/images/mask.png) top left no-repeat;
   background-size: contain;
 }
+

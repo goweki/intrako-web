@@ -1,23 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function CardServices({ title, description, children }) {
+export function CardServicesBrief({ title, children }) {
   return (
-    <div className="group m-2 p-4 flex flex-col justify-center items-center rounded border-1 bg-primary/10 border-gray-500 shadow hover:border-transparent hover:bg-primary transition-all cursor-default">
-      <div className="rounded-full p-4 bg-transparent group-hover:scale-125 group-hover:text-gray-200 transition-all">
+    <div
+      className={`overflow-hidden min-h-60 group flex flex-col justify-end items-center border-1 bg-white/20 border-gray-500 shadow hover:border-transparent hover:bg-primary/80 transition-all cursor-default`}
+    >
+      <div className="rounded-full p-4 bg-transparent text-transparent group-hover:scale-125 group-hover:text-gray-200 transition-all">
         {children}
       </div>
-      <h5 className="mb-3 group-hover:text-white group-hover:scale-110 font-semibold transition-all">
+      <h5 className="pt-4 w-full bg-gradient-to-b from-black/0 via-black/80 to-black/90 pb-4 text-white group-hover:scale-110 font-semibold transition-all text-center">
         {title}
       </h5>
-      <p className="text-center min-h-20 group-hover:text-gray-100">
-        {description}
-      </p>
     </div>
   );
 }
 
-export function CardTestimonial({ name, company, quote }) {
+export function CardServices({ title, content, children }) {
+  return (
+    <div
+      className="relative flex h-full flex-col items-center rounded border-2 border-gray-300 p-6"
+      data-aos="fade-up"
+      data-aos-anchor="[data-aos-id-blocks]"
+    >
+      <div className="rounded-full bg-gray-900 text-white p-4 mb-2">
+        {children}
+      </div>
+      <h4 className="h4 mb-2 text-center">{title}</h4>
+      <p className="text-lg text-gray-600 text-center">{content}</p>
+    </div>
+  );
+}
+
+export function CardTestimonial({ name, company, quote, image }) {
   return (
     <div
       className="h-full rounded group flex flex-col p-6 bg-primary/20 transition-all cursor-default shadow hover:shadow-lg hover:bg-primary"
@@ -27,7 +42,7 @@ export function CardTestimonial({ name, company, quote }) {
         <div className="relative inline-flex flex-col mb-4">
           <Image
             className="rounded-full"
-            src={"/images/placeholder-dp.jpg"}
+            src={image}
             width={48}
             height={48}
             alt="testimonial-img"
@@ -45,13 +60,13 @@ export function CardTestimonial({ name, company, quote }) {
         {quote}
       </blockquote>
       <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-400">
-        <cite className="not-italic group-hover:text-gray-200">{name}</cite>
+        {/* <cite className="not-italic group-hover:text-gray-200">{name}</cite> */}
         <span
           className="italic font-light transition duration-150 ease-in-out group-hover:text-gray-300"
           href="#0"
         >
-          {" "}
-          - {company}
+          {/* {" "} */}
+          {company}
         </span>
       </div>
     </div>
@@ -62,16 +77,16 @@ export function CardMission({ title, content, image }) {
   return (
     <div
       data-aos="zoom-in"
-      className="group mx-auto flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-primary/80 hover:bg-primary cursor-default shadow"
+      className="group my-4 mx-auto h-full w-full flex flex-col items-center border rounded-lg md:flex-row md:max-w-xl border-gray-700 bg-primary/80 hover:bg-primary cursor-default shadow"
     >
       <img
-        className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+        className="object-cover w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-s-lg"
         src={image}
         alt={`img-${title}`}
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="mb-3 font-normal text-gray-400">{title}</h5>
-        <p className="max-w-60 mb-2 group-hover:text-white font-medium tracking-tight text-gray-200 transition-all">
+        <h5 className="mb-3 text-gray-400 font-bold">{title}</h5>
+        <p className="max-w-full mb-2 group-hover:text-white font-medium tracking-tight text-gray-200 transition-all">
           {content}
         </p>
       </div>
@@ -82,7 +97,7 @@ export function CardMission({ title, content, image }) {
 export function CardCoreValues({ title, content, children }) {
   return (
     <div
-      className="relative flex flex-col items-center rounded border-2 border-gray-300 p-6"
+      className="relative flex h-full flex-col items-center rounded border-2 border-gray-300 p-6"
       data-aos="fade-up"
       data-aos-anchor="[data-aos-id-blocks]"
     >
