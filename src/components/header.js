@@ -23,8 +23,8 @@ export default function Header() {
   return (
     <header
       id="header"
-      className={`w-full z-30 fixed transition-all ${
-        top ? "" : "bg-primary/80 backdrop-blur-md shadow"
+      className={`w-full z-30 fixed transition-all border-b border-transparent ${
+        top ? "" : "bg-primary/80 backdrop-blur-md shadow-lg border-grey-800/20"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -80,5 +80,6 @@ const menuItems = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "/aboutUs" },
   { name: "Services", link: "/services" },
+  { name: "Blog", link: "/blog" },
   { name: "Contacts", link: "/contacts" },
 ];

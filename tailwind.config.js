@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        dancing: ["var(--font-dancing)"],
+      },
       colors: {
-        primary: '#29028E',
-        secondary: '#F4901E'
+        primary: "#29028E",
+        secondary: "#F4901E",
       },
       animation: {
         fade: "fadeIn 1s cubic-bezier(0.4, 0, 1, 1)",

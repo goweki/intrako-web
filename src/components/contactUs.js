@@ -80,7 +80,7 @@ export default function ContactUs() {
         <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-4">
-            <h2 className="h4">We are social. Reach out to us...</h2>
+            <h2>We are social. Reach out...</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div>
@@ -100,10 +100,10 @@ export default function ContactUs() {
                   ></path>
                 </svg>
                 <Link
-                  href="tel:{{ contact.tel }}"
-                  className="hover:text-orange-300"
+                  href="tel:+254112629496"
+                  className="hover:text-orange-700"
                 >
-                  Tel: (+254) 722 000 000
+                  Tel: (+254) 112629496
                 </Link>
               </div>
 
@@ -124,7 +124,7 @@ export default function ContactUs() {
                 </svg>
                 <Link
                   href="mailto:business@intrako.co.ke"
-                  className="hover:text-orange-300"
+                  className="hover:text-orange-700"
                 >
                   Email: business@intrako.co.ke
                 </Link>
@@ -172,7 +172,7 @@ export default function ContactUs() {
                 <Link
                   href="https://maps.app.goo.gl/Dpn5p7CvMsbJ9QxY9"
                   target="_blank"
-                  className="hover:text-orange-300"
+                  className="hover:text-orange-700"
                 >
                   Muthangari Drive, Lavington, Nairobi-KE
                 </Link>

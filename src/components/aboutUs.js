@@ -1,52 +1,51 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
 import { CardCoreValues, CardMission } from "./cards";
 
 export default function AboutUs() {
   return (
-    <section id="aboutUs">
+    <div id="aboutUs">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-8 md:py-10">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h4 mb-4">
+            <h2 className="font-inter font-bold text-2xl mb-4">
               We are an agency with experienced marketing and business talents,
               that leverage best industry practices to curate and execute
               targeted marketing and business strategies. Our operations are
               grounded on meticulous research, strategic thinking, and the
               innovative application of knowledge.
             </h2>
-            <h3 className="text-xl text-gray-600">
+            <h3 className="text-xl text-gray-600 font-normal">
               At the core of our services are the users and clients we serve in
               addition to the values that guide us:
             </h3>
           </div>
           {/* Mission & Vision */}
           <div
-            className="p-2 max-w-sm mx-auto grid gap-8 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none"
+            className="p-8 max-w-sm mx-auto grid lg:grid-cols-2 gap-8 items-start md:max-w-2xl lg:max-w-none"
             data-aos-id-blocks
           >
             {/* 1st item */}
             <CardMission
               title="MISSION"
-              content="This is the mission statement for intrako"
-              image="/images/service-03.jpg"
+              content="At INTRAKO, we passionately refine brands,craft compelling messages, and optimize strategies to drive lasting impact and organizational success for our clients."
+              image="/images/mission.jpg"
             />
             {/* 2nd item */}
             <CardMission
               title="VISION"
-              content="This is the vision of Intrako"
-              image="/images/service-03.jpg"
+              content="To be a beacon in marketing, we're committed to creativity, innovation, and delivering measurable results, guiding clients to outstanding success and pushing the boundaries of excellence."
+              image="/images/vision.jpg"
             />
           </div>
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 sm:px-6 py-16 md:pb-10">
+      <div className="max-w-6xl mx-auto px-6 py-16 md:pb-10">
         {/* Core values */}
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 className="h4 mb-4">Core values</h2>
+          <h2 className="mb-4">Core Values</h2>
           <p className="text-xl text-gray-600">
             At the core of our services are the values that guide us:
           </p>
@@ -54,7 +53,7 @@ export default function AboutUs() {
 
         {/* Cards - core values */}
         <div
-          className="max-w-sm md:max-w-2xl lg:max-w-none mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start "
+          className="max-w-sm md:max-w-2xl lg:max-w-none mx-auto grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 items-start "
           data-aos-id-blocks
         >
           {/* 1st value */}
@@ -247,7 +246,7 @@ export default function AboutUs() {
           </CardCoreValues>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -256,15 +255,13 @@ export function BriefAboutUs() {
     <section className="px-6 pt-24 pb-16 w-full" id="brief-aboutUs">
       <div className="max-w-6xl m-auto grid grid-cols-1">
         <div data-aos="fade-down" data-aos-delay="200" className="mx-auto">
-          <div className="m-auto md:m-6 text-lg bg-primary text-white rounded-full inline py-2 px-4 border-0">
-            About Us
-          </div>
+          <h2>About Us</h2>
         </div>
         <div className="m-3 md:m-6" data-aos="fade-up" data-aos-delay="400">
           <div className="my-auto flex flex-col space-4">
-            <h2 className="h2 mb-4 text-center max-w-3xl m-auto">
+            <h3 className="mb-4 text-center max-w-3xl m-auto">
               We help businesses manage and scale products
-            </h2>
+            </h3>
             <div className="flex flex-col my-4">
               <p className="mb-4 text-center  text-lg">
                 XPERIENTIAL marketing takes center stage as our main service,
@@ -280,39 +277,6 @@ export function BriefAboutUs() {
                 More about us
               </Link>
             </div>
-            <p className="mt-4 mb-2 m-auto font-bold">We specialize in:</p>
-            <ul className="grid grid-cols-1 w-fit m-auto">
-              <li className="flex items-center mb-2">
-                <svg
-                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                </svg>
-                <span>Marketing</span>
-              </li>
-              <li className="flex items-center mb-2">
-                <svg
-                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                </svg>
-                <span>Branding</span>
-              </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-3 h-3 fill-current text-sky-500 mr-2 shrink-0"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                </svg>
-                <span>Project management</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
