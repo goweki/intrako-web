@@ -1,5 +1,11 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Blog() {
-  return (
+  const [blogpost, setBlogpost] = useState("");
+
+  return !blogpost ? (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <div className="container grid grid-cols-12 mx-auto">
         <div className="flex flex-col col-span-12 p-6 divide-y lg:p-10 divide-gray-300">
@@ -7,6 +13,7 @@ export default function Blog() {
             <div
               key={i}
               className="pt-6 pb-4 space-y-2 hover:bg-gray-200 cursor-pointer p-4 rounded"
+              onClick={() => setBlogpost(v)}
             >
               <span className="text-sm font-bold text-gray-500">{v.date}</span>
               <h1 className="text-3xl font-bold">{v.title}</h1>
@@ -34,6 +41,61 @@ export default function Blog() {
           ))}
         </div>
       </div>
+    </div>
+  ) : (
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 md:py-12">
+      <button
+        onClick={() => setBlogpost("")}
+        className="flex flex-row mb-4 flex-nowrap text-sm items-center bg-gray-800 w-fit text-white px-4 py-2 rounded-full"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          className="w-6 h-6 stroke-2 stroke-current fill-none me-2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+          />
+        </svg>
+        View all blogposts
+      </button>
+      <article className="space-y-8 dark:bg-gray-100 dark:text-gray-900 mb-6 md:mb-12">
+        <div className="space-y-6">
+          <h1 className="text-2xl sm:text-4xl font-bold md:tracking-tight md:text-5xl">
+            {blogpost.title}
+          </h1>
+          <div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center dark:text-gray-600">
+            <div className="flex items-center md:space-x-2">
+              <p className="text-sm">by Admin • {blogpost.date}</p>
+            </div>
+            <p className="flex-shrink-0 mt-3 text-sm md:mt-0">
+              less than 5min read
+            </p>
+          </div>
+        </div>
+        <div className="dark:text-gray-800">
+          <p>{blogpost.article}</p>
+        </div>
+      </article>
+      {/* 
+      <div className="space-y-2 border-t border-gray-400 pt-4">
+        <h4 className="text-lg font-semibold">Other posts</h4>
+        <ul className="ml-4 space-y-1 list-disc">
+          {blogs
+            .filter((v) => v.title !== blogpost.title)
+            .map((v, i) => (
+              <li key={i}>
+                <button
+                  onClick={() => setBlogpost(v)}
+                  className="hover:underline"
+                >
+                  {v.title}
+                </button>
+              </li>
+            ))}
+        </ul>
+      </div> */}
     </div>
   );
 }
