@@ -1,4 +1,4 @@
-# Source code for Intrako website.
+# Source code for Intrako website
 
 ## Toolchain
 
@@ -22,7 +22,7 @@
 
 #### Database structure
 
-The MongoDb blogposts collection contains blog entries as objects. The blog objects look like so:
+The MongoDB blogposts collection contains blog entries as objects. The blog objects look like so:
 
 ```
 {
@@ -37,7 +37,7 @@ The MongoDb blogposts collection contains blog entries as objects. The blog obje
 Clone this repo in your local directory:
 
 ```bash
-git clone https://github.com/goweki/loci.git
+git clone https://github.com/goweki/intrako-web.git
 ```
 
 Navigate into the local repo and install dependencies:
