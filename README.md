@@ -11,7 +11,7 @@
 
 - Home: [`/`]
 - About Us: [`/aboutUs`]
-- Servives: [`/services`]
+- Services: [`/services`]
 - Blog: [`/blog`]
 - Contacts: [`/contacts`]
 
