@@ -1,6 +1,4 @@
-# LOCi security portal - webapp
-
-Source code for Intrako website.
+# Source code for Intrako website.
 
 ## Toolchain
 
